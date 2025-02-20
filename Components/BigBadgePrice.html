@@ -1,0 +1,47 @@
+.badge-container {
+    color: var(--color-headlings);
+    display: inline-flex;
+    text-align: center;
+    margin: 0 0.8rem;
+    padding: 1rem 3.2rem;
+    border-radius: 3rem;
+    font-size: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s, color 0.3s, background-color 0.3s;
+}
+
+.hidden-checkbox {
+    display: none;
+}
+
+
+.badge-container:hover,
+.badge-text:hover {
+    cursor: pointer;
+}
+
+.badge-container:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.466);
+}
+
+.hidden-checkbox:checked + .badge-container {
+    background-color: var(--color-secondary);
+    color: white;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.466);
+}
+
+@media screen and (min-width: 1024px) {
+    .badge-container {
+        font-size: 1.5rem;
+        padding: 0.8rem 2.8rem;
+    }
+}
+
+
+
+
+
+<input type="checkbox" id="toggle" class="hidden-checkbox">
+    <div class="badge-container big-badge">
+        <label class="badge-text" for="toggle">.sg $7.91</label>
+    </div>
