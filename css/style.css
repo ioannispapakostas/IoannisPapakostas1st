@@ -345,3 +345,27 @@ a {
     }
     
 }
+
+        /* CARD BODY */
+
+.card {
+    box-shadow: 0 0 1rem 2rem var(--color-border);
+    border-radius: 0.7rem;
+    overflow: hidden;
+}
+
+.card__header,
+.card__body {
+    padding: 2rem 3rem;
+}
+
+.card--primary .card__header {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.card--secondary .card__header {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
