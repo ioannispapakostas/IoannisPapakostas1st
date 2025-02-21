@@ -1,0 +1,31 @@
+/* TEXT INPUT with the BUTTON */
+
+.input-group {
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    display: flex;
+}
+
+.input-group .input {
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem;
+}
+
+.input-group .btn {
+    margin: 0.4rem;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .input {
+        font-size: 1.5rem;
+    }
+    
+}
+
+
+<div class="input-group">
+    <input type="text" class="input" placeholder="Enter your domain here ...">
+    <button class="btn btn--accent">Get Started</button>
+</div>
