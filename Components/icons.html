@@ -1,0 +1,49 @@
+/* ICONS */
+
+.icon {
+    width: 4.2rem;
+    height: 4.2rem;
+}
+
+.icon--primary {
+    fill: var(--color-primary)
+}
+
+.circle-icon {
+    display: inline-flex;
+    border-radius: 50%;
+    width: 9rem;
+    height: 9rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3e5e5;
+}
+
+.circle-icon .icon {
+    width: 5rem;
+    height: 5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .circle-icon {
+        width: 6.7rem;
+        height: 6.7rem;
+    }
+
+    .circle-icon .icon {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+
+
+<span class="circle-icon">
+    <svg class="icon icon--primary">
+        <use xlink:href="images/Icons/sprite.svg#wordpress"></use>
+    </svg>
+</span>
+
+    <svg class="icon icon--primary">
+        <use xlink:href="images/Icons/sprite.svg#wordpress"></use>
+    </svg>
