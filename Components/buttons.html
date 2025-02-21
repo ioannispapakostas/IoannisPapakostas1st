@@ -1,0 +1,72 @@
+/* BUTTONS */
+
+.btn {
+    font-size: 1.8rem;
+    border: 0;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 4rem;
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 1rem 0;
+}
+
+.btn--accent {
+    background-color: var(--color-accent);
+    color: white;
+}
+
+.btn--primary {
+    background-color: white;
+    color: black;
+}
+
+.btn--secondary {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+.btn--outline {
+    background-color: white;
+    color: var(--color-headlings);
+    border: 2px solid var(--color-headlings);
+}
+
+.btn--block {
+    width: 100%;
+    display: inline-block;
+}
+
+.btn--accent:hover {
+    background-color: #9a1f00;
+}
+
+.btn--primary:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.btn--secondary:hover {
+    background-color: #0098b3;
+}
+
+.btn--outline:hover {
+    background-color: var(--color-headlings);
+    color: white;
+}
+
+@media screen and (min-width: 1024px) {
+    .btn {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+    
+<button class="btn btn--accent btn--block">Get Started</button>
+<button class="btn btn--outline">Get Started</button>
+<button class="btn btn--secondary">Get Started</button>
+<a href="#" class="btn btn--secondary btn--block">Get Started</a>
