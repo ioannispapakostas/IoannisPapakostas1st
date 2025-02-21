@@ -1,0 +1,60 @@
+/* PLAN CARD */
+
+.plan__name {
+    font-size: 2.4rem;
+    margin-left: 0;
+    padding-bottom: 1rem;
+    color: white;
+    font-weight: 500;
+    
+}
+
+.plan__price {
+    
+    font-size: 6rem;
+}
+
+.plan__bill--cycle {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 2.4rem;
+    margin-right: 1rem;
+    font-weight: 300;
+}
+
+.plan .plan__description {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    padding-top: 3rem;
+    display: block;
+}
+
+.plan .list--tick li{
+    padding-left: 0.1rem;
+}
+
+
+<div style="width: 50%; padding: 4rem;">
+    <div class="plan">
+        <div class="card card--primary">
+            <header class="card__header">
+                <h3 class="plan__name">Business</h3>
+                <span class="plan__price">$24</span>
+                <span class="plan__bill--cycle">/month</span>
+                <span class="badge static-badge dark-blue">20% OFF</span>
+                <span class="plan__description">Optimal Cloud Experience</span>
+            </header>
+            <div class="card__body">
+                <ul class="list list--tick">
+                    <li class="list__item">Unlimited Websites</li>
+                    <li class="list__item">Unlimited Bandwidth</li>
+                    <li class="list__item">100GB SSD Storage</li>
+                    <li class="list__item">3 GB RAM</li>
+                    <li class="list__item">2 CPU Cores</li>
+                </ul>
+                <button class="btn btn--block btn--outline">Buy now</button>
+            </div>
+        </div>
+    </div>
+</div>

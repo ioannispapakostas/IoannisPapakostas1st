@@ -156,6 +156,18 @@ a {
     background-color: var(--color-primary);
 }
 
+.plan .dark-blue {
+    background-color: #1d66c5;
+    font-size: 1.6rem;
+    padding: 0.6rem 1rem;
+}
+
+.plan .light-blue {
+    background-color: #009ab5;
+    font-size: 1.6rem;
+    padding: 0.6rem 1rem;
+}
+
 @media screen and (min-width: 1024px) {
     .static-badge {
         font-size: 1.2rem;
@@ -258,6 +270,7 @@ a {
     text-decoration: none;
     margin: 1rem 0;
     padding: 2rem 3rem;
+    white-space: nowrap;
 }
 
 .btn--accent {
@@ -349,7 +362,7 @@ a {
         /* CARD BODY */
 
 .card {
-    box-shadow: 0 0 1rem 2rem var(--color-border);
+    box-shadow: 0 0 1rem 1rem var(--color-border);
     border-radius: 0.7rem;
     overflow: hidden;
 }
@@ -367,5 +380,42 @@ a {
 .card--secondary .card__header {
     background-color: var(--color-secondary);
     color: white;
+}
+
+
+        /* PLAN CARD */
+
+.plan__name {
+    font-size: 2.4rem;
+    margin-left: 0;
+    padding-bottom: 1rem;
+    color: white;
+    font-weight: 500;
+    
+}
+
+.plan__price {
+    
+    font-size: 6rem;
+}
+
+.plan__bill--cycle {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 2.4rem;
+    margin-right: 1rem;
+    font-weight: 300;
+}
+
+.plan .plan__description {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    padding-top: 3rem;
+    display: block;
+}
+
+.plan .list--tick li{
+    padding-left: 0.1rem;
 }
 
