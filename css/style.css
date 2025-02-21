@@ -155,3 +155,44 @@ a {
         padding-right: 1.1rem;
     }
 }
+
+
+        /* LISTS */
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    color: var(--color-headlings);
+}
+
+.list--inline .list__item {
+    display: inline-block;
+    margin-right: 3rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.list--tick{
+    list-style-image: url("../images/Icons/tick.svg");
+    padding-left: 3rem;
+}
+
+.list--tick .list__item{
+    padding-left: 1.3rem;
+    margin-bottom: 3rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .list--inline .list__item {
+        font-size: 1.5rem;
+    }
+    
+    .list--tick .list__item {
+        margin-bottom: 2rem;
+        padding-left: 0rem;
+        font-size: 1.7rem;
+    }
+}
