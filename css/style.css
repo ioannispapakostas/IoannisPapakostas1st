@@ -226,7 +226,7 @@ a {
 }
 
 .icon--primary {
-    fill: var(--color-primary)
+    fill: var(--color-primary);
 }
 
 .circle-icon {
@@ -447,5 +447,36 @@ a {
 
     .plan__description {
         font-size: 1.7rem;
+    }
+}
+
+        /* MEDIA */
+
+        
+.media-container {
+    display: flex;
+}
+
+.media-image {
+    margin-right: 2rem;
+    margin-top: 1rem
+}
+
+.media-header {
+    display: inline-block;
+    margin: 0;
+    font-size: 2.4rem;
+}
+
+.media-content {
+    display: inline-block;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .media-body .media-header,
+    .media-body .media-content {
+        font-size: 1.8rem;
     }
 }

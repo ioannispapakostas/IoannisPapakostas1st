@@ -1,0 +1,43 @@
+<div class="media-container">
+    <div class="media-image">
+        <svg class="icon icon--primary">
+            <use xlink:href="images/Icons/sprite.svg#snap"></use>
+        </svg>
+    </div>
+    <div class="media-body">
+        <h3 class="media-header">Easy Start & Managed Updates</h3>
+        <p class="media-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique 
+                assumenda vero eius deleniti modi delectus aliquam expedita harum iure illum?</p>
+    </div>
+</div>
+
+
+
+/* MEDIA */
+.media-container {
+    display: flex;
+}
+
+.media-image {
+    margin-right: 2rem;
+    margin-top: 1rem
+}
+
+.media-header {
+    display: inline-block;
+    margin: 0;
+    font-size: 2.4rem;
+}
+
+.media-content {
+    display: inline-block;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .media-body .media-header,
+    .media-body .media-content {
+        font-size: 1.8rem;
+    }
+}
