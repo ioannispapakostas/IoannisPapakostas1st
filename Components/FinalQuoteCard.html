@@ -1,0 +1,89 @@
+<div class="card testimonial">
+    <div class="grid grid--1x2">
+        <div class="testimonial__image">
+            <img src="images/john.png" alt="A happy person looking at the camera">
+            <span class="circle-icon-accent">
+                <svg class="icon--small icon--accent">
+                    <use xlink:href="images/Icons/sprite.svg#quotes"></use>
+                </svg>
+            </span>
+        </div>
+        <div class="testimonial__quote">
+            <blockquote class="quote">
+                <p class="quote__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Nulla totam ullam cumque, earum perferendis nesciunt illum quia quaerat velit expedita.
+                sit amet consectetur adipisicing elit.</p>
+                <div class="media-container">
+                    <div class="media-image">
+                        <svg class="icon icon--primary">
+                            <use xlink:href="images/Icons/sprite.svg#line"></use>
+                        </svg>
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-header quote__author">Ioannis Papakostas</h3>
+                        <p class="media-content quote__company">CookieCutterHUB Co-Founder</p>
+                    </div>
+                </div>
+            </blockquote>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+/* QUOTE GRID */
+
+.testimonial {
+    padding: 3rem;
+    margin: 3rem;
+}
+
+.testimonial__image {
+    position: relative;
+}
+
+.testimonial__image > img {
+    width: 100%;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.testimonial__image > .circle-icon-accent {
+    position: absolute;
+    top: 4rem;
+    right: -1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .testimonial .quote__text {
+        font-size: 2.4rem;
+    }
+
+    .testimonial .quote__author {
+        font-size: 2.4rem;
+    }
+
+    .testimonial .quote__company {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .testimonial .quote__text {
+        font-size: 3rem;
+    }
+
+    .testimonial .quote__author {
+        font-size: 3rem;
+    }
+
+    .testimonial .quote__company {
+        font-size: 2rem;
+        
+    }
+    
+}

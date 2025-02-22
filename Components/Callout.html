@@ -1,0 +1,56 @@
+/* CALLOUT */
+
+.callout {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    /*temp*/ margin: 3rem;
+}
+
+.callout__header {
+    text-align: center;
+}
+
+.callout h2 {
+    color: white;
+    font-size: 4rem;
+}
+
+.callout p {
+    font-size: 2.4rem;
+}
+
+.callout .callout__button {
+    justify-self: center;
+    align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+    .callout .grid--1x2 {
+        grid-template-columns: 1fr auto;
+    }
+
+    .callout__header {
+        text-align: left;
+    }
+
+    .callout__button {
+        justify-self: start;
+        margin: 0 2rem;
+    }
+}
+
+
+<div class="callout">
+    <div class="grid grid--1x2">
+        <div class="callout__header">
+            <h2>Ready To get Started?</h2>
+            <p>Choose the hosting provider that helps you start easy, build fast and grow strong! 
+                It's risk-free with our 14-day money back guarantee.</p>
+        </div>
+        <div class="callout__button">
+            <button class="btn btn--secondary btn--stretched">Get Started</button>
+        </div> 
+    </div>
+</div>
