@@ -4,6 +4,7 @@
     --color-accent: #ff3400;
     --color-headlings: #1b0760;
     --color-body: #918ca4;
+    --color-body-darker: #5c5577;
     --color-border: #ccc;
     --border-radius: 3rem;
 }
@@ -452,7 +453,7 @@ a {
 
         /* MEDIA */
 
-        
+
 .media-container {
     display: flex;
 }
@@ -469,7 +470,6 @@ a {
 }
 
 .media-content {
-    display: inline-block;
     font-size: 2rem;
     margin: 1rem 0;
 }
@@ -478,5 +478,49 @@ a {
     .media-body .media-header,
     .media-body .media-content {
         font-size: 1.8rem;
+    }
+}
+
+
+        /* QUOTE */
+
+.quote {
+    font-size: 3rem;
+    font-style: italic;
+    color: var(--color-body-darker);
+    line-height: 3.7rem;
+}
+
+.quote__text::before {
+    content: open-quote;
+}
+
+.quote__text::after {
+    content: close-quote;
+}
+
+.quote__author {
+    padding-top: 1rem;
+    font-size: 3rem;
+}
+
+.quote__company {
+    margin-top: 0;
+    font-size: 2rem;
+    color: var(--color-body);
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 1024px) {
+    .quote {
+        font-size: 2.4rem;    
+    }
+
+    .quote__author {
+        font-size: 2.4rem;
+    }
+
+    .quote__company {
+        font-size: 1.6rem;
     }
 }
