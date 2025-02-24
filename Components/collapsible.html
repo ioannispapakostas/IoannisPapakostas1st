@@ -1,0 +1,60 @@
+<div class="collapsible collapsible--expanded">
+    <header class="collapsible__header">
+        <h3 class="collapsible__heading">Products</h3>
+        <svg class="icon icon--white collapsible__icon">
+            <use xlink:href="images/Icons/sprite.svg#chevron"></use>
+        </svg>
+    </header>
+    <div class="collapsible__content">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, a.
+    </div>
+</div>
+<script src="js/main.js"></script>
+
+
+
+
+/* COLLAPSIBLE */
+
+.collapsible {
+    padding: 1rem;
+}
+
+.collapsible__header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.collapsible__heading {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.collapsible__icon {
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+}
+
+.collapsible__icon:hover {
+    cursor: pointer;
+}
+
+.collapsible__content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__icon {
+    transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+    display: block;
+    max-height: 100vh;
+    opacity: 1;
+}

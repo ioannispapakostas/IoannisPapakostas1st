@@ -1,0 +1,65 @@
+<section class="block  dark--block block-left-skew">
+    <div class="container">
+        <header class="block__header">
+            <h2 class="block__heading">Heading</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, possimus.</p>
+        </header>
+        <div style="width: 30%; padding: 4rem;">
+            <div class="card card--primary">
+                <header class="card__header">Title</header>
+                <div class="card__body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis et deleniti laboriosam consequuntur deserunt ipsam dolor, enim eligendi voluptatum fugiat?</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="block">
+    <header class="block__header">
+        <h2 class="block__heading">Heading</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, possimus.</p>
+    </header>
+</section>
+
+/* BLOCK */
+
+.block {
+    --padding-vertical: 6rem;
+   padding: var(--padding-vertical) 2rem;
+
+}
+
+.block__header {
+    text-align: center;
+}
+
+.block__heading {
+    margin-top: 0;
+}
+
+.dark--block {
+    background-color: #000;
+    color: white;
+
+}
+
+.dark--block .block__heading {
+    color: #fff;
+}
+
+
+.block-left-skew {
+    padding-bottom: calc(var(--padding-vertical) + 7rem);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+}
+
+.block-right-skew {
+    padding-bottom: calc(var(--padding-vertical) + 7rem);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}

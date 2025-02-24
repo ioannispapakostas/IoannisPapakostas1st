@@ -1,0 +1,81 @@
+<nav class="nav collapsible">
+    <a href="/"><img class="logo" src="images/CookieCutter Color cropped.png" alt="Logo of CookieCutterHub"></a>
+    <svg class="icon icon--white nav__toggler">
+        <use xlink:href="images/Icons/sprite.svg#menu"></use>
+    </svg>
+    <ul class="list nav__list collapsible__content">
+        <li class="nav__items"><a href="#">Hosting</a></li>
+        <li class="nav__items"><a href="#">VPS</a></li>
+        <li class="nav__items"><a href="#">Domain</a></li>
+        <li class="nav__items"><a href="#">Pricing</a></li>
+    </ul>
+</nav>
+<script src="js/main.js"></script>
+
+
+
+/* NAV BAR */
+
+.nav {
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav__list {
+    margin: 0;
+    width: 100%;
+}
+
+.nav__items a{
+    text-decoration: none;
+    color: var(--color-border);
+    transition: color 0.3s;
+}
+
+.nav__items a:hover{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.nav__items {
+    border-bottom: 1px solid #222;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    width: 20rem;
+}
+
+.nav__toggler {
+    margin: 2rem;
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+.nav.collapsible--expanded .nav__toggler {
+    opacity: 1;
+    box-shadow: 0 0 0 3px #666;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .nav__toggler{
+        display: none;
+    }
+
+    .nav .nav__list {
+        width: auto;
+        display: flex;
+        font-size: 1.6rem;
+        max-height: 100%;
+        opacity: 1;
+    }
+
+    .nav__items {
+        border: 0;
+    }
+}
