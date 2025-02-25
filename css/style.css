@@ -606,7 +606,8 @@ a {
 
 .testimonial {
     padding: 3rem;
-    margin: 3rem;
+    margin: 3rem auto;
+    max-width: 1140px;
 }
 
 .testimonial__image {
@@ -1087,7 +1088,9 @@ a {
     margin: 0 auto;
 }
 
-
+.grid-second {
+    display: grid;
+}
 
 .article h2 {
     color: #fff;
@@ -1120,3 +1123,16 @@ a {
 .media-section .grid picture {
     min-width: 570px;
 }
+
+@media screen and (min-width: 1024px) {
+    .grid-second {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .media-section .media-panel {
+        padding-bottom: 0;
+    }
+}
+
+
+
