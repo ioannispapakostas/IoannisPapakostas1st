@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="desciption" content="Ioannis Papakostas 1st project">
+    <title>Ioannis Papakostas</title>
+    <meta property="og:title" content="IoannisPapakostas" />
+    <meta property="og:type" content="1stProject" />
+    <meta property="og:url" content="https://www.ioannispapakostas.com" />
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <body>
     <nav class="nav collapsible">
-        <a href="/"><img class="logo" src="images/CookieCutter Color cropped.png" alt="Logo of CookieCutterHub"></a>
+        <a href="/"><img class="logo" src="images/CookieCutterColorcropped.png" alt="Logo of CookieCutterHub"></a>
         <svg class="icon icon--white nav__toggler">
             <use xlink:href="images/Icons/sprite.svg#menu"></use>
         </svg>
@@ -22,14 +28,19 @@
             <li class="nav__items"><a href="#">Pricing</a></li>
         </ul>
     </nav>
-    <section class="starter block dark--block block-left-skew">
+    <section class="starter block dark--block">
         <div class="starter__main grid grid--1x2">
-            <div class="starter__1st">
+            <div class="starter__1st" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <h2 class="starter__heading">Cloud Hosting for Pros</h2>
             <p>Deploy your website in less than 60 seconds</p>
             <a href="#" class="btn btn--accent btn--block starter__btn">Get Started</a>
             </div>
-            <picture>
+            <picture data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500">
                 <source type="image/webp" srcset="images/banner@1x.webp 1x, images/banner@2x.webp 2x">
                 <source type="image/png" srcset="images/banner@1x.png 1x, images/banner@2x.png 2x">
                 <img src="images/banner@1x.png" alt="image of electronic devices connecting together throught a server" class="starter__image">
@@ -37,7 +48,9 @@
         </div>
     </section>
     <section class="domain block">
-        <div class="domain__container container">
+        <div class="domain__container container" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
             <h3 class="domain__heading">The best webhosting Starting at per month</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptas exercitationem ipsa dolor ipsam sequi obcaecati consequuntur ducimus aliquid. Molestiae!</p>
             <div class="input-group">
@@ -57,7 +70,7 @@
         </div>      
     </section>
     <section class="block container block-plan">
-        <div class="grid grid--1x3">
+        <div class="grid grid--1x3" data-aos="fade-up">
     
             <div class="plan__container">
                 <div class="card card--secondary">
@@ -126,12 +139,12 @@
         </div>
     </section>
     <section class="features">
-        <header class="features__header">
+        <header class="features__header" data-aos="flip-left">
             <h2>Host on the Cloud to Keep Growing</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quam!</p>
         </header>
         <div class="grid grid--1x2">
-            <div class="features__info">
+            <div class="features__info" data-aos="fade-right">
                 <span class="circle-icon">
                     <svg class="icon icon--primary">
                         <use xlink:href="images/Icons/sprite.svg#easy"></use>
@@ -141,7 +154,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi dolorem totam rerum unde sed.</p>
                 <a href="#" class="link-arrow">Learn more</a>
             </div>
-            <div class="features__image">
+            <div class="features__image" data-aos="fade-left">
                 <picture>
                     <source type="image/webp" srcset="images/easy@1x.webp 1x, images/easy@2x.webp 2x">
                     <source type="image/png" srcset="images/easy@1x.png 1x, images/easy@2x.png 2x">
@@ -150,7 +163,7 @@
             </div>
         </div>
         <div class="grid grid--1x2">
-            <div class="features__info">
+            <div class="features__info" data-aos="fade-up-left">
                 <span class="circle-icon">
                     <svg class="icon icon--primary">
                         <use xlink:href="images/Icons/sprite.svg#computer"></use>
@@ -160,8 +173,8 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi dolorem totam rerum unde sed.</p>
                 <a href="#" class="link-arrow">Learn more</a>
             </div>
-            <div class="features__image image-swap">
-                <picture>
+            <div class="features__image image-swap" data-aos="fade-down-right">
+                <picture >
                     <source type="image/webp" srcset="images/fast@1x.webp 1x, images/fast@2x.webp 2x">
                     <source type="image/png" srcset="images/fast@1x.png 1x, images/fast@2x.png 2x">
                     <img src="images/fast@1x.png" alt="image of Charts with how fast is the servers" class="starter__image">
@@ -169,7 +182,7 @@
             </div>
         </div>
         <div class="grid grid--1x2">
-            <div class="features__info">
+            <div class="features__info" data-aos="flip-up">
                 <span class="circle-icon">
                     <svg class="icon icon--primary">
                         <use xlink:href="images/Icons/sprite.svg#settings"></use>
@@ -179,7 +192,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi dolorem totam rerum unde sed.</p>
                 <a href="#" class="link-arrow">Learn more</a>
             </div>
-            <div class="features__image">
+            <div class="features__image" data-aos="flip-down">
                 <picture>
                     <source type="image/webp" srcset="images/wordpress@1x.webp 1x, images/wordpress@2x.webp 2x">
                     <source type="image/png" srcset="images/wordpress@1x.png 1x, images/wordpress@2x.png 2x">
@@ -188,7 +201,7 @@
             </div>
         </div>
         <div class="grid grid--1x2">
-            <div class="features__info">
+            <div class="features__info" data-aos="zoom-in">
                 <span class="circle-icon">
                     <svg class="icon icon--primary">
                         <use xlink:href="images/Icons/sprite.svg#clock"></use>
@@ -198,7 +211,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi dolorem totam rerum unde sed.</p>
                 <a href="#" class="link-arrow">Learn more</a>
             </div>
-            <div class="features__image image-swap">
+            <div class="features__image image-swap" data-aos="flip-down">
                 <picture>
                     <source type="image/webp" srcset="images/support@1x.webp 1x, images/support@2x.webp 2x">
                     <source type="image/png" srcset="images/support@1x.png 1x, images/support@2x.png 2x">
@@ -213,12 +226,12 @@
                 <h2>User-Friendly Control Panel</h2>
             </article>
             <div class="grid-second">
-                <picture>
+                <picture data-aos="zoom-out-right">
                     <source type="image/webp" srcset="images/ipad@1x.webp 1x, images/ipad@2x.webp 2x">
                     <source type="image/pnsg" srcset="images/ipad@1x.png 1x, images/ipad@2x.png 2x">
                     <img src="images/ipad@1x.png" alt="image of Charts with memory balance and Power of computer" class="starter__image">
                 </picture>
-                <div class="media-panel">
+                <div class="media-panel" data-aos="zoom-out-left">
                     <div class="media-container">
                         <div class="media-image">
                             <svg class="icon icon--primary">
@@ -264,7 +277,8 @@
             <h2>What our Customer are Saying</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, culpa.</p>
         </header>
-        <div class="card testimonial">
+        <div class="card testimonial" data-aos="fade-up"
+        data-aos-duration="3000">
             <div class="grid grid--1x2">
                 <div class="testimonial__image">
                     <img src="images/john.png" alt="A happy person looking at the camera">
@@ -298,12 +312,12 @@
     <footer class="footer block">
         <div class="container grid">
              <section class="collapsible">
-                 <header class="collapsible__header">
+                 <div class="collapsible__header">
                      <h3 class="collapsible__heading">Products</h3>
                      <svg class="icon icon--white collapsible__icon">
                          <use xlink:href="images/Icons/sprite.svg#chevron"></use>
                      </svg>
-                 </header>
+                 </div>
                  <ul class="list nav__list collapsible__content">
                      <li class="nav__items"><a href="#">WordPress Hosting</a></li>
                      <li class="nav__items"><a href="#">Free Automated WordPress</a></li>
@@ -313,12 +327,12 @@
                  </ul>
              </section>
              <section class="collapsible">
-                 <header class="collapsible__header">
+                 <div class="collapsible__header">
                      <h3 class="collapsible__heading">COMPANY</h3>
                      <svg class="icon icon--white collapsible__icon">
                          <use xlink:href="images/Icons/sprite.svg#chevron"></use>
                      </svg>
-                 </header>
+                 </div>
                  <ul class="list nav__list collapsible__content">
                      <li class="nav__items"><a href="#">About</a></li>
                      <li class="nav__items"><a href="#">Affiliates</a></li>
@@ -330,12 +344,12 @@
                  </ul>
              </section>
              <section class="collapsible">
-                 <header class="collapsible__header">
+                 <div class="collapsible__header">
                      <h3 class="collapsible__heading">SUPPORT</h3>
                      <svg class="icon icon--white collapsible__icon">
                          <use xlink:href="images/Icons/sprite.svg#chevron"></use>
                      </svg>
-                 </header>
+                    </div>
                  <ul class="list nav__list collapsible__content">
                      <li class="nav__items"><a href="#">Contact</a></li>
                      <li class="nav__items"><a href="#">Knowledge Base</a></li>
@@ -346,12 +360,12 @@
                  </ul>
              </section>
              <section class="collapsible">
-                 <header class="collapsible__header">
+                 <div class="collapsible__header">
                      <h3 class="collapsible__heading">DOMAINS</h3>
                      <svg class="icon icon--white collapsible__icon">
                          <use xlink:href="images/Icons/sprite.svg#chevron"></use>
                      </svg>
-                 </header>
+                 </div>
                  <ul class="list nav__list collapsible__content">
                      <li class="nav__items"><a href="#">Domain Checker</a></li>
                      <li class="nav__items"><a href="#">Domain Transfer</a></li>
@@ -361,11 +375,15 @@
                  </ul>
              </section>
              <section class="footer__logo">
-                 <a href="/"><img class="logo" src="images/CookieCutter Color cropped.png" alt="Logo of CookieCutterHub"></a>
-                 <p>Copyright &copy 2020 CookieCutterHUB</p>
+                 <a href="/"><img class="logo" src="images/CookieCutterColorcropped.png" alt="Logo of CookieCutterHub"></a>
+                 <p>Copyright &copy; 2020 CookieCutterHUB</p>
              </section>
         </div>     
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
